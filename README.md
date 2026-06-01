@@ -5,7 +5,7 @@
 ### A Memory-Efficient Sequential Expert Architecture for Large Language Models
 
 > **Relay-of-Experts (RoE)** is a system design that replaces parallel Mixture-of-Experts (MoE) with a *sequential expert relay*, trading latency for significantly reduced memory usage.
-
+https://huggingface.co/datasets/xingy555888/cancri-latent-relay
 ---
 
 ## 🧠 Overview
