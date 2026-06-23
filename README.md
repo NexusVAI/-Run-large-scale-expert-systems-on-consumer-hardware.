@@ -91,17 +91,15 @@ Mitigation strategies:
 * Rollback mechanisms
 
 ---
-
 ## 🧪 Current Status
 
-This repository provides:
-
-* ✅ System design of RoE
-* ✅ Training pipeline validation (engineering-level)
-* ⚠️ Limited empirical evaluation (ongoing work)
-
-> This is an **early-stage research prototype**.
-
+### ✅ Validated Results (Cancri-500M Pretraining)
+- Native BRP pretraining: **439.4M parameters**, trained from scratch
+- **board_lift: 2.5+** at step 153K (baseline: 0.31 at step 1K)
+- **ppl_real: 18.99** (best checkpoint)
+- Training corpus: ~700B tokens (54% Chinese / 46% English)
+- Board utilization: confirmed active across all checkpoints ✅板被用
+- Phase 0 retrofit on Qwen3.5-2B: anchor loss lifted board_lift from 0.55 → 1.54
 ---
 
 ## 📊 Planned Evaluation
